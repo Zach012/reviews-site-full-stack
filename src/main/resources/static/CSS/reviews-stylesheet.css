@@ -1,0 +1,46 @@
+html {
+    padding: 0;
+    background-color: black;
+    color: turquoise;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+}
+
+a:link {
+   color: teal;
+   text-decoration: none;
+}
+
+a:visited {
+    color: teal;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+img {
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+
+#content {
+    margin: 25px 50px 25px 50px;
+    text-align: center;
+    height: 500px;
+    line-height: 3em;
+}
+
+h1 h2 {
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    text-align: right;
+}

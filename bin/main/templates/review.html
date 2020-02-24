@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/CSS/reviews-stylesheet.css}"/>
+	<title th:text="${reviewModel.name}">A review</title>
+</head>
+<body>
+
+	<header>
+		<h1 th:text="${reviewModel.name}">A review</h1>
+	</header>
+
+	<main>
+
+	    <h2 th:text="${reviewModel.category}"></h2>
+        <div id="image">
+            <img th:src="@{/images/{image}(image=${reviewModel.image})}"/>
+        </div>
+        <div id ="content">
+            <h4 th:text="${reviewModel.description}"></h4>
+         </div>
+
+         <h4><a th:href="@{/show-reviews}">back to reviews</a></h4>
+	</main>
+
+	<footer>
+		<small>Copyright: Mr. Luxury Yacht</small>
+	</footer>
+
+</body>
+</html>
